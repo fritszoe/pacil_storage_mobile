@@ -1,6 +1,5 @@
 # pacil_storage
 
-##
 <details> 
 <summary>Tugas - 7</summary>
 <br>
