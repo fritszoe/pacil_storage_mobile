@@ -1,16 +1,33 @@
 # pacil_storage
 
-A new Flutter project.
+##
+<details> 
+<summary>Tugas - 7</summary>
+<br>
 
-## Getting Started
+### 1.) Stateless vs Stateful
 
-This project is a starting point for a Flutter application.
+- Stateless: Stateless widget adalah widget yang tidak memiliki keadaan internal (state). Ini berarti bahwa sekali widget tersebut dibuat, ia tidak bisa mengubah tampilannya berdasarkan perubahan data. Jadi tidak cocok untuk interface yang ada perubahan datanya
+- Stateful: Stateful widget adalah widget yang memiliki keadaan internal (state) yang dapat berubah selama siklus hidup widget. Ini memungkinkan widget untuk merespons perubahan data dan memperbarui tampilannya sesuai kebutuhan. Ini cocok untuk interface yang ada perubahan data
 
-A few resources to get you started if this is your first Flutter project:
+### 2.) Apa saja widget di sini?
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- MyApp: Yaitu widget utama yang jalanin aplikasi
+- MyHomePage: Widget yang berupa home page dari aplikasi flutter ini
+- ShopCard: Widget berbentuk card yang  menerima objek dari class ShopItem. widget inilah yang nantinya jika ditekan akan mengeluarkan snack bar "anda menekan tombol ini".
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 3.) How To?
+
+- Pertama flutter create app
+- Setelah itu, widget MyHomePage dari main akan dipindahkan ke dalam file baru bernama menu.dart, dari sini akan disambungkan dengan cara import
+```dart
+import 'package:pacil_storage/menu.dart';
+```
+- Setelah memindahkan MyHomePage beserta _MyHomePageState, mengubah widget MyHomePage menjadi stateless sehingga _MyHomePageState tidak lagi diperlukan.
+- Membuat class Shop Item yang nantinya akan digunakan widget ShopCard sekaligus membuat object Shop Item tersebut.
+- Membuat widget ShopCard yang akan menampilkan object Shop Item.
+- Setelah itu harusnya selesai karena di main.dart, sudah disambungkan homepage nya, di bagian 
+```dart
+home: myHomePage(),
+```
+</details>
